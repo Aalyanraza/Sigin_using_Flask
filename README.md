@@ -32,15 +32,17 @@ python3 -m virtualenv env
 ```
 
 ### 3. Activate the Virtual Environment
-*On Linux/Mac:
-```bash
-source env/bin/activate
-```
 
-*On Windows:
-```bash
-.\env\Scripts\activate
-```
+- **On Linux/Mac:**
+    ```bash
+    source env/bin/activate
+    ```
+
+- **On Windows:**
+    ```bash
+    .\env\Scripts\activate
+    ```
+
 
 ### 4. Install Dependencies
 ```bash

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>User Details</title>
+    <h1 style="text-align: center;">Home</h1>
+{% endblock %}
+
+{% block head %}
+    <style>
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+        .user-details {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .user-details p {
+            font-size: 18px;
+            color: #333;
+        }
+        .user-details p span {
+            font-weight: bold;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="user-details">
+        <h2>Welcome, {{ user.username }}!</h2>
+        <p><span>Username:</span> {{ user.username }}</p>
+        <p><span>Password:</span> {{ user.password }}</p>
+        <p><span>Points:</span> {{ user.points }}</p>
+    </div>
+{% endblock %}
